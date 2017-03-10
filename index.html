@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- DOCTYPE Declaration -->
+<html> <!-- Begin HTML Structure -->
+<head> <!-- Begin Head Elements -->
+
+<!-- Meta Tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1">
+
+<!-- Link & Script Tags -->
+<link rel="stylesheet" type="text/css" href="main.css" media="screen">
+<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Trirong" rel="stylesheet"><!-- Fonts-->
+<script src="ajax.js"></script>
+  
+<!--  Website Title -->
+<title>Random Star Wars People</title>
+<!--
+  <script>
+   let xhr = new XMLHttpRequest();
+ 	 xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200) {
+      document.getElementById('ajax').innerHTML = xhr.responseText;
+      }
+    } else {
+      alert(xhr.statusText);
+      console.log(xhr.statusText);
+    }
+  };
+		xhr.open('GET', 'http://swapi.co/api/people');
+		function sendAJAX() {
+ 	 		xhr.send();
+		}
+  </script>
+-->
+</head> <!-- End Head Elements -->
+
+<!-- HTML Body -->
+<body>
+ 
+<!-- Header Div & Elements -->
+  <div class="header">
+    <h1 class="first-word">Star Wars</h1>
+  </div>
+
+<!-- API Elements & Main Container --> 
+  <h1 id="title"></h1>
+
+  <section class=""> <!-- Custom JavaScript Implemented -->
+    <h2>People of Star Wars</h2><br>
+     <button id ="load" onclick="sendAJAX()">Next</button>
+		<ul id="ajax"> </ul>
+  </section>    
+  
+  <div id="container">
+    <!-- API-Response Person Details -->
+    
+    <details class="explanation">
+        <p id=""></p>
+    </details>
+  </div>  
+  <!-- End API Elements and Main Container -->
+
+<!-- Footer Elements -->
+    <div class="footer">
+    </div>  
+<!-- End Footer Elements-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <script src="modal.js"></script>
+
+</body> <!-- End Body -->
+</html> <!-- End HTML Structure-->
