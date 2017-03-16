@@ -1,0 +1,235 @@
+/******** Main Element Selectors ******
+*
+  padding: 0
+  margin: 0
+
+body
+  width: 100%
+  text-align: center
+  background-image: url("http://res.cloudinary.com/deetriplett/image/upload/v1489359229/starrybg_idxxl6.jpg")
+  background-size: 100%
+  color: #000
+  font-family: 'Trirong', serif
+ 
+.header
+  width: 100%
+  padding: 2%
+  margin-bottom: 0
+
+.footer
+  width: 60%
+  height: auto
+  display: inline-block
+  
+#reveal 
+  background-color: #000
+  // border-radius: 4em
+  max-width: 20%
+  margin-left: 40%
+  margin-top: -2%
+  border: none
+
+#reveal img 
+  padding: 0
+  height: 200px
+  
+#head-img
+  height: 15%
+  display: inline-block
+  float: left
+  width: 25%
+  margin-bottom: -50px
+  margin-top: -50px
+  margin-bottom: -1.2em
+
+#title
+  color: #f2f2f2
+  font-weight: bold
+  font-size: 3em
+  Text-align: center
+  padding-top: 1em
+
+/** LIST STYLES **/
+
+h3
+  font-size: 2em
+  font-weight: bold
+  color: yellow
+h4
+  font-size: 1em
+  margin: 0
+  text-align: center
+  color: #fff  
+a 
+  text-decoration: none
+  color: #808080
+a:hover
+  color: yellow
+p
+  display: inline
+  text-align: left
+  color: #FFF
+
+button
+  margin: 1%
+  padding: 1%
+  color: #000
+  display: block
+  align: center
+  text-align: center
+  
+img:hover
+  cursor: default
+  transform: rotate(360deg)
+  transition: all 0.3s ease-in-out 0s
+
+//#next {
+//   display: hidden;
+// }
+
+/******** API Element Selectors ******/
+#container
+  width: 100%
+  // background-color: #000
+
+#people-list
+  display: inline-block
+  height: auto
+  width: 50%
+  border: 5px
+  // background-color: #000
+  border-radius: 1em
+  padding: 1%
+  // text-indent: 40px
+  text-align: left
+  margin: 1%
+  ul li
+    display: none
+    text-align: left
+    margin: 3em
+    color: #7d767d
+    list-style-type: none
+    border-radius: 1em
+    margin: 0
+    padding: 1em
+    text-align: center
+  
+  h3
+    font-size: 1em
+    padding-top: 0
+    margin-top: -2
+    text-align: center
+    border-bottom: 2px solid #fff
+    
+  h4
+    display: inline-block
+    margin-top: -1em
+
+    
+/******* Media Queries for Responsive Design*****/
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait)
+  .header
+    font-size: 4em
+ 
+  #people-list
+    width: 90%
+    height: auto
+    font-size: 0.85em
+    background-color: inherit
+    border: none
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape)
+  .banner
+    font-size: 4em
+  h2
+    font-size: 1em
+  #people-list
+    width: 90%
+    height: auto
+    font-size: 1em
+    background-color: inherit
+    border: none
+
+@media (min-width: 480px) and (max-width: 768px) and (orientation: portrait)
+  .banner
+    font-size: 4em
+  h2
+    font-size: 1em
+  #people-list
+    width: 90%
+    height: auto
+    font-size: 1em
+    background-color: inherit
+    border: none
+
+@media (min-width: 480px) and (max-width: 768px) and (orientation: landscape)
+  .banner
+    font-size: 4em
+  h2
+    font-size: 1em
+  #people-list
+    width: 90%
+    height: auto
+    font-size: 1em
+    background-color: inherit
+    border: none
+
+@media (min-width: 768px) and (max-width: 992px) and (orientation: portrait)
+  .banner
+    font-size: 7em
+  h2
+    font-size: 2em
+  #people-list
+    width: 90%
+    height: auto
+    font-size: 1em
+
+@media (min-width: 768px) and (max-width: 992px) and (orientation: landscape)
+  .banner
+    font-size: 7em
+  h2
+    font-size: 2em
+  #people-list
+    width: 90%
+    height: auto
+    font-size: 1em
+
+@media (min-width: 992px) and (max-width: 1200px) and (orientation: portrait)
+  .banner
+    font-size: 7em
+  h2
+    font-size: 2em
+  #people-list
+    width: 80%
+    height: auto
+    font-size: 1em
+
+@media (min-width: 992px) and (max-width: 1200px) and (orientation: landscape)
+  .banner
+    font-size: 7em
+  h2
+    font-size: 2em
+  #people-list
+    width: 80%
+    height: auto
+    font-size: 1em
+
+@media (min-width: 1200px) and (max-width: 1500px) and (orientation: portrait)
+  .banner
+    font-size: 7em
+  h2
+    font-size: 2em
+  #people-list
+    width: 80%
+    height: auto
+    font-size: 2em
+
+@media (min-width: 1200px) and (max-width: 1500px) and (orientation: landscape)
+  .banner
+    font-size: 7em
+  h2
+    font-size: 2em
+  #people-list
+    width: 80%
+    height: auto
+    font-size: 2em
